@@ -21,22 +21,24 @@ const Appointment = () => {
   return (
     // doctorInfo && 
     (
-      <div>
-        {/* doctorInfo.image */}
+      <h1>huzaifa</h1>
+      // <div>
+      //   {/* doctorInfo.image */}
 
-        <div className="">
-          <div className="">
-            <img src={docInfo.image} alt="" />
-          </div>
+      //   {/* <div className="">
+      //     <div className="">
+      //       <img src={docInfo.image} alt="" />
+      //     </div>
 
-          <div className="">
-            {/* name degree speciality */}
-            <p className="">
-              {docInfo.name} <img src={assets.verified_icon} alt="" />
-            </p>
-          </div>
-        </div>
-      </div>
+      //     <div className="">
+      //       {/* name degree speciality 
+      //       <p className="">
+      //         {docInfo.name} <img src={assets.verified_icon} alt="" />
+      //       </p>
+      //     </div>
+      //   </div> */
+      //   <h1></h1>
+      // </div>
     )
   );
 };

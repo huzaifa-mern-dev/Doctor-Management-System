@@ -6,10 +6,12 @@ export const AppContext = createContext();
 
 const AppContextProvider = (props) => {
   const value = {
-    doctors,
+    doctors
   };
   return (
-    <AppContext.Provider value={value}>{props.children}</AppContext.Provider>
+    <AppContext.Provider value={value}>
+      {props.children}
+    </AppContext.Provider>
   );
 };
 
