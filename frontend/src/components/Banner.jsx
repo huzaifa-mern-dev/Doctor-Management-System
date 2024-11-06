@@ -1,4 +1,3 @@
-import React from 'react'
 import { assets } from '../assets/assets_frontend/assets'
 import { useNavigate } from 'react-router-dom';
 
