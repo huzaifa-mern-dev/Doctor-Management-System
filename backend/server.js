@@ -9,6 +9,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 
 connectDB()
+connectCloudinary()
 
 // middleware
 app.use(express.json());
