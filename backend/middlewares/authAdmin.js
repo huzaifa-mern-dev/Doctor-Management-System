@@ -4,18 +4,19 @@ const authAdmin = (req, res, next) => {
   try {
     const { atoken } = req.headers;
     if (!atoken) {
-      return res.status(400).json({ message: "Invalid Authentication" });
+      return res.status(400).json({ success:false, message: "Invalid Authentication" });
     }
     const token_decode = jwt.verify(atoken, process.env.JWT_SECRET);
 
     if (token_decode !== process.env.ADMIN_EMAIL + process.env.ADMIN_PASSWORD) {
-      return res.status(400).json({ message: "Invalid Authentication" });
+      return res.status(400).json({success:false,  message: "Invalid Authentication" });
     }
+    // res.status(200).json({ success:true, message: "Admin Authentication"})
 
     next()
   } catch (error) {
     console.log(error);
-    return res.status(500).json({ message: error.message });
+    return res.status(500).json({ success:false,  message: error.message });
   }
 };
 

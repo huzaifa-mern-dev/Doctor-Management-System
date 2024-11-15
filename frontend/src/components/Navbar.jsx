@@ -75,7 +75,7 @@ const Navbar = () => {
 
         {/* mobile menu */}
 
-        <div>
+        {/* <div>
           <div>
             <img src={assets.logo} alt="" />
             <img
@@ -90,7 +90,7 @@ const Navbar = () => {
             <NavLink>ABOUT</NavLink>
             <NavLink>CONTACT</NavLink>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
