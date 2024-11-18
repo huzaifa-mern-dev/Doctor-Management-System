@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { doctors } from "../assets/assets_frontend/assets";
+// import { doctors } from "../assets/assets_frontend/assets";
 import { toast } from "react-toastify";
 import axios from "axios";
 
