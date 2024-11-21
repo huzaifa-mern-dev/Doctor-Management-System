@@ -37,8 +37,10 @@ const AppContextProvider = (props) => {
         },
       });
       if (data.success) {
+        setUserData(data.userData); 
         toast.success(data.message);
-        return data.userData;
+
+        console.log(data.userData);
       } else {
         console.log(data.message);
         toast.error(data.message);
@@ -57,6 +59,7 @@ const AppContextProvider = (props) => {
     setToken,
     backendUrl,
     userData,setUserData,
+    loadUserProfileData
   };
   useEffect(() => {
     getDoctorsData();
